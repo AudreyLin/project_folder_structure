@@ -7,6 +7,7 @@ It might change later, but right now its just a quick reference based on some yo
 ## Resources
 
 - [WebDevSimplified YT: Junior vs Senior React Folder Structure - How To Organize React projects ](https://youtu.be/UUga4-z7b6s)
+- [PedroTech YT: Folder Structure for API's](https://youtu.be/oNlMrpnUSFE)
 
 ## Notes
 
@@ -19,3 +20,7 @@ features.
 
 These folders will only contain hooks that are global that can be used across
 the entire app.
+
+## Dotenv & Environment variable security
+
+Environment variables should be outside both folders for security purposes.  Also, if you are doing a frontend only project, the enviroment variables and the code to access the environment variables should be written in a backend server (pretty much a fullstack project).  If you write the dotenv access in the src folder of the react/frontend, then they will be accessible to the browser, defeating the purpose of the dotenv and exposing any sensitive api keys, data, etc.  
