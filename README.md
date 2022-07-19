@@ -23,4 +23,4 @@ the entire app.
 
 ## Dotenv & Environment variable security
 
-Environment variables should be outside both folders for security purposes.  Also, if you are doing a frontend only project, the enviroment variables and the code to access the environment variables should be written in a backend server (pretty much a fullstack project).  If you write the dotenv access in the src folder of the react/frontend, then they will be accessible to the browser, defeating the purpose of the dotenv and exposing any sensitive api keys, data, etc.  
+Environment variables should be outside the React folder and inside the Node folder for security purposes.  Also, if you are doing a frontend only project, the enviroment variables and the code to access the environment variables should be written in a backend server (pretty much a fullstack project).  If you write the dotenv access in the src folder of the react/frontend, then they will be accessible to the browser, defeating the purpose of the dotenv and exposing any sensitive api keys, data, etc.  
